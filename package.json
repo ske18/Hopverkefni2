@@ -25,6 +25,7 @@
     "prettier": "2.4.1"
   },
   "dependencies": {
+    "sass": "^1.43.4",
     "stylelint-config-sass-guidelines": "^9.0.1",
     "stylelint-config-standard": "^24.0.0"
   }
