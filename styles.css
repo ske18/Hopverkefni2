@@ -41,7 +41,15 @@ section {
   margin-bottom: 1rem;
 }
 
+.row1b {
+  margin-top: 1rem;
+}
+
 .takkalysing {
+  display: inline;
+}
+
+.valflokkur {
   display: inline;
 }
 
