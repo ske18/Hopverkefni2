@@ -8,11 +8,13 @@
   },
   "scripts": {
     "browser-sync": "browser-sync start --server --files main.js **/*.js styles.css index.html",
-    "lint": "eslint ./**/*.js stylelint styles.scss ./**/*.scss",
+    "eslint": "eslint ./**/*.js",
+    "stylelint": "stylelint styles.scss ./**/*.scss",
     "sass": "sass styles.scss styles.css",
     "sass-watch": "sass --watch styles.scss styles.css",
     "prettier": "prettier --write .",
-    "dev": "concurrently npm:browser-sync npm:sass-watch"
+    "dev": "concurrently npm:browser-sync npm:sass-watch",
+    "lint": "concurrently npm:eslint npm:stylelint"
   },
   "keywords": [],
   "author": "",
@@ -28,6 +30,7 @@
   "dependencies": {
     "concurrently": "^6.4.0",
     "sass": "^1.43.5",
+    "stylelint": "^14.1.0",
     "stylelint-config-sass-guidelines": "^9.0.1",
     "stylelint-config-standard": "^24.0.0"
   }

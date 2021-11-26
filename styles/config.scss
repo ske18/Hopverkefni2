@@ -38,6 +38,10 @@ section {
     margin-bottom: 1rem;
   }
 }
+.row2a{
+  flex-direction: row;
+  
+}
 .row1b {
   margin-top: 1rem;
   margin-bottom: 2rem;
@@ -50,6 +54,9 @@ section {
 .row3b {
   margin-bottom: 2rem;
   flex-direction: row;
+  & > .flokkun {
+    display: inline;
+  }
 }
 
 .takkalysing {
