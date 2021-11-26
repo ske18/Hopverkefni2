@@ -7,10 +7,10 @@ body {
 }
 
 h1 {
-  width: 100%;
-  text-align: center;
   flex-grow: 1;
   font-size: 3em;
+  text-align: center;
+  width: 100%;
 }
 
 main {
@@ -48,9 +48,9 @@ section {
 }
 
 .row1b {
-  margin-top: 1rem;
-  margin-bottom: 2rem;
   flex-direction: row;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 
 .row2b {
