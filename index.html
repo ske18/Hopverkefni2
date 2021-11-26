@@ -1,88 +1,95 @@
 <!DOCTYPE html>
 <html lang="is">
-<head>
-    <link rel="stylesheet" href="./styles.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="./styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="./lib/main.js" type="module"></script>
 
     <title>Hópverkefni2</title>
-</head>
-<body>
-    
-   <header><h1>Verkefnalistinn</h1></header>
-<main>
-
-    <section class="filterPannel">
-        
+  </head>
+  <body>
+    <header><h1>Verkefnalistinn</h1></header>
+    <main>
+      <section class="filterPannel">
         <div class="row1a">
-            <h3 class="virkverkefni">Verkefni</h3>
-            <h3 class="buinverkefni">Kláruð verkefni</h3>
+          <h3 class="virkverkefni">Verkefni</h3>
+          <h3 class="buinverkefni">Kláruð verkefni</h3>
         </div>
         <div class="row2a">
-            <h2>Flokkar</h2>
-            <p class="vefforflokkur">Vefforrit</p>
-            <p class="skipflokkur">Skipulag</p>
-            <p class="vefthjonflokkur">Vefþjónustur</p>
+          <h2>Flokkar</h2>
+          <p class="vefforflokkur">Vefforrit</p>
+          <p class="skipflokkur">Skipulag</p>
+          <p class="vefthjonflokkur">Vefþjónustur</p>
         </div>
         <div class="row3a">
-            <h2>Tags</h2>
-            <p class="veffortag">Vefforrit</p>
-            <p class="skiptag">Skipulag</p>
-            <p class="vefthonflokkur">Vefþjónustur</p>
+          <h2>Tags</h2>
+          <p class="veffortag">Vefforrit</p>
+          <p class="skiptag">Skipulag</p>
+          <p class="vefthonflokkur">Vefþjónustur</p>
         </div>
-    </section>
-    
-    <section class="toDoList">    
+      </section>
+
+      <section class="toDoList">
         <div class="row1b">
-            <label>Raða eftir:
-                <select name="choices">
-                    <option value="first">
-                        Dagsetningu                
-                    </option>
-                    <option>Flokkar</option>
-                    <option>Tags</option>
-                </select>
-            </label>
+          <label
+            >Raða eftir:
+            <select name="choices">
+              <option value="first">Dagsetningu</option>
+              <option>Flokkar</option>
+              <option>Tags</option>
+            </select>
+          </label>
         </div>
-        
+
         <div class="row2b">
-            <div><input type="radio"><p class="takkalysing">Titill á task</div> 
-            <div><textarea>Lýsing á verkefni, ef er</textarea></div>
-            <!--þarf að tengja við data.jason eru ekki takkar-->
-            <div><input type="datetime-local">
+          <div>
+            <input type="radio" />
+            <p class="takkalysing">Titill á task</p>
+          </div>
+          <div><textarea>Lýsing á verkefni, ef er</textarea></div>
+          <!--þarf að tengja við data.jason eru ekki takkar-->
+          <div>
+            <input type="datetime-local" />
             <button name="button">Tag</button>
             <button name="button">Tag</button>
             <button name="button">Tag</button>
             <select class="valflokkur">
-                <option>Vefforrit</option>
-                <option>Skipulag</option>
-                <option>Vefþjónustur</option></select></div>
-            <div><button name="button">edit</button></div>
+              <option>Vefforrit</option>
+              <option>Skipulag</option>
+              <option>Vefþjónustur</option>
+            </select>
+          </div>
+          <div><button name="button">edit</button></div>
         </div>
-        
+
         <div class="row3b">
-            <div><input type="radio"><p class="takkalysing">Titill á task</div> 
-                <div><textarea>Lýsing á verkefni, ef er</textarea></div>
-                <!--þarf að tengja við data.jason eru ekki takkar-->
-                <div><input type="datetime-local">
-                <button name="button">Tag</button>
-                <button name="button">Tag</button>
-                <button name="button">Tag</button>
-                <select class="valflokkur">
-                    <option>Vefforrit</option>
-                    <option>Skipulag</option>
-                    <option>Vefþjónustur</option></select></div>
-                <div><button name="button">edit</button></div><!--breytist í save í edit--> 
-        
-        
-        <div class="row4b">
-        
-            <button type="button"> Bæta við verkefni</button>
+          <div>
+            <input type="radio" />
+            <p class="takkalysing">Titill á task</p>
+          </div>
+          <div><textarea>Lýsing á verkefni, ef er</textarea></div>
+          <!--þarf að tengja við data.jason eru ekki takkar-->
+          <div>
+            <input type="datetime-local" />
+            <button name="button">Tag</button>
+            <button name="button">Tag</button>
+            <button name="button">Tag</button>
+            <select class="valflokkur">
+              <option>Vefforrit</option>
+              <option>Skipulag</option>
+              <option>Vefþjónustur</option>
+            </select>
+          </div>
+          <div><button name="button">edit</button></div>
+          <!--breytist í save í edit-->
+
+          <div class="row4b">
+            <button type="button">Bæta við verkefni</button>
+          </div>
         </div>
-    </div>    
-</section>
-</main>
-</body>
-</html> 
+      </section>
+    </main>
+  </body>
+</html>
