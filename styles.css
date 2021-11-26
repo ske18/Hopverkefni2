@@ -43,6 +43,10 @@ section {
   margin-bottom: 1rem;
 }
 
+.row2a {
+  flex-direction: row;
+}
+
 .row1b {
   margin-top: 1rem;
   margin-bottom: 2rem;
