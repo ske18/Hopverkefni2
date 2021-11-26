@@ -6,60 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./lib/main.js" type="module"></script>
+
     <title>Hópverkefni2</title>
 </head>
 <body>
-    <h1>Verkefnalistinn</h1>
-    <div class="column1">
+    
+   <header><h1>Verkefnalistinn</h1></header>
+<main>
+
+    <section class="filterPannel">
+        
         <div class="row1a">
-            <p>Verkefni</p>
-            <p>Kláruð verkefni</p>
+            <h3>Verkefni</h3>
+            <h3>Kláruð verkefni</h3>
         </div>
         <div class="row2a">
-            <h3>Flokkar</h3>
+            <h2>Flokkar</h2>
             <p>Vefforrit</p>
             <p>Skipulag</p>
             <p>Vefþjónustur</p>
         </div>
         <div class="row3a">
-            <h3>Tags</h3>
+            <h2>Tags</h2>
             <p>Vefforrit</p>
             <p>Skipulag</p>
             <p>Vefþjónustur</p>
         </div>
-    </div>   
-
-    <div class="column2">
+    </section>
+    
+    <section class="toDoList">    
         <div class="row1b">
             <label>Raða eftir:
                 <select name="choices">
                     <option value="first">
-                     Dagsetningu
+                        Dagsetningu                
                     </option>
+                    <option>Flokkar</option>
+                    <option>Tags</option>
                 </select>
             </label>
         </div>
-
+        
         <div class="row2b">
-            <input type="checkbox"> Titill á task</div>
+            <div><input type="radio"><p class="takkalysing">Titill á task</div> 
+            <div><textarea>Lýsing á verkefni, ef er</textarea></div>
+            <!--þarf að tengja við data.jason eru ekki takkar-->
+            <div><input type="datetime-local">
             <button name="button">Tag</button>
             <button name="button">Tag</button>
             <button name="button">Tag</button>
-            <p>Flokkur</p>
+            <p class="valflokkur">Flokkur</p></div>
+            <div><button name="button">edit</button></div>
         </div>
-
+        
         <div class="row3b">
-            <input type="checkbox"> Titill á task</div>
-            <button name="button">Tag</button>
-            <button name="button">Tag</button>
-            <button name="button">Tag</button>
-            <p>flokkur</p>
+            <div><input type="radio"><p class="takkalysing">Titill á task</div> 
+                <div><textarea>Lýsing á verkefni, ef er</textarea></div>
+                <!--þarf að tengja við data.jason eru ekki takkar-->
+                <div><input type="datetime-local">
+                <button name="button">Tag</button>
+                <button name="button">Tag</button>
+                <button name="button">Tag</button>
+                <p class="valflokkur">Flokkur</p></div>
+                <div><button name="button">edit</button></div><!--breytist í save í edit--> 
         </div>
-
+        
         <div class="row4b">
-            <input type="checkbox"> Bæta við verkefni</div>
+        
+            <button type="button"> Bæta við verkefni</button>
         </div>
     </div>    
-
+</section>
+</main>
 </body>
-</html>
+</html> 

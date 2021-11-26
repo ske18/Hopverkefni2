@@ -7,11 +7,12 @@
     "lib": "lib"
   },
   "scripts": {
-    "dev": "browser-sync start --server --files main.js **/*.js styles.css index.html",
+    "browser-sync": "browser-sync start --server --files main.js **/*.js styles.css index.html",
     "lint": "eslint ./**/*.js stylelint styles.scss ./**/*.scss",
     "sass": "sass styles.scss styles.css",
-    "sass-watch": "sass --watch *.scss styles.css",
-    "prettier": "prettier --write ."
+    "sass-watch": "sass --watch styles.scss styles.css",
+    "prettier": "prettier --write .",
+    "dev": "concurrently npm:browser-sync npm:sass-watch"
   },
   "keywords": [],
   "author": "",
@@ -22,10 +23,11 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.2",
-    "prettier": "2.4.1"
+    "prettier": "^2.4.1"
   },
   "dependencies": {
-    "sass": "^1.43.4",
+    "concurrently": "^6.4.0",
+    "sass": "^1.43.5",
     "stylelint-config-sass-guidelines": "^9.0.1",
     "stylelint-config-standard": "^24.0.0"
   }

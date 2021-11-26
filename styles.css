@@ -1,5 +1,69 @@
-h1{
-    display: flex;
-    display: center;
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&display=swap");
+html,
+body {
+  background: whitesmoke;
+  font-family: "Comic Neue", cursive;
 }
-    
+
+h1 {
+  width: 100%;
+  text-align: center;
+  flex-grow: 1;
+  font-size: 3em;
+}
+
+main {
+  display: flex;
+}
+main > * {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+section {
+  border: 5px solid black;
+  flex-direction: column;
+}
+
+.filterPannel {
+  width: 30%;
+}
+.filterPannel > * {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.toDoList {
+  display: flex;
+  width: 70%;
+}
+.toDoList > * {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.row1b {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  flex-direction: row;
+}
+
+.row2b {
+  margin-bottom: 2rem;
+  flex-direction: row;
+}
+
+.row3b {
+  margin-bottom: 2rem;
+  flex-direction: row;
+}
+
+.takkalysing {
+  display: inline;
+}
+
+.valflokkur {
+  display: inline;
+}
+
+/*# sourceMappingURL=styles.css.map */
