@@ -50,6 +50,9 @@ section {
 .row3b {
   margin-bottom: 2rem;
   flex-direction: row;
+  & > .flokkun {
+    display: inline;
+  }
 }
 
 .takkalysing {
