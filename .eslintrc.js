@@ -11,7 +11,7 @@ module.exports = {
   rules: {
     "no-restricted-syntax": 0,
     "import/prefer-default-export": 0,
-    quotes: ["error", "single"],
+    quotes: ["error", "double"],
     "no-console": [
       "warn",
       {

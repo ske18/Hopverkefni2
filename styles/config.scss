@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&family=M+PLUS+1p:wght@300&display=swap");
+
 html,
 body {
   background: whitesmoke;
@@ -7,11 +8,12 @@ body {
 }
 
 h1 {
-  width: 100%;
-  text-align: center;
   flex-grow: 1;
   font-size: 3em;
+  text-align: center;
+  width: 100%;
 }
+
 main {
   display: flex;
   & > * {
@@ -19,10 +21,12 @@ main {
     margin-bottom: 1rem;
   }
 }
+
 section {
   border: 5px solid black;
   flex-direction: column;
 }
+
 .filterPannel {
   width: 30%;
   & > * {
@@ -30,6 +34,7 @@ section {
     margin-bottom: 1rem;
   }
 }
+
 .toDoList {
   display: flex;
   width: 70%;
@@ -38,18 +43,22 @@ section {
     margin-bottom: 1rem;
   }
 }
+
 .row2a {
   flex-direction: row;
 }
+
 .row1b {
-  margin-top: 1rem;
-  margin-bottom: 2rem;
   flex-direction: row;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
 }
+
 .row2b {
   margin-bottom: 2rem;
   flex-direction: row;
 }
+
 .row3b {
   margin-bottom: 2rem;
   flex-direction: row;
@@ -61,6 +70,7 @@ section {
 .takkalysing {
   display: inline;
 }
+
 .valflokkur {
   display: inline;
 }
